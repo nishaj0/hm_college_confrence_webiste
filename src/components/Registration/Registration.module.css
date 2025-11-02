@@ -55,6 +55,8 @@
   border-radius: 20px;
   padding: 2.5rem;
   backdrop-filter: blur(10px);
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .cardIcon {
@@ -305,7 +307,8 @@
   }
 
   .infoCard, .formCard {
-    padding: 1.5rem;
+    padding: 1.25rem;
+    min-width: 0;
   }
 
   .publicationCard {
@@ -318,5 +321,24 @@
 
   .committees {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .registration {
+    padding: 3rem 0.75rem;
+  }
+
+  .infoCard, .formCard {
+    padding: 1rem;
+    min-width: 0;
+  }
+
+  .publicationCard {
+    padding: 1.5rem 1rem;
+  }
+
+  .committeeSection {
+    padding: 1.5rem 1rem;
   }
 }
