@@ -69,6 +69,7 @@ export default function Hero() {
             <p className={styles.association}>
               In association with IQAC, Research & Publishing Committee, Staff Council, and Staff Club
             </p>
+            <img src="/logo/logo.jpeg" alt="Organizers" className={styles.logo} />
           </motion.div>
 
           <motion.div

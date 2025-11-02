@@ -97,6 +97,14 @@
   line-height: 1.6;
 }
 
+.logo {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
 .cta {
   display: flex;
   flex-wrap: wrap;
