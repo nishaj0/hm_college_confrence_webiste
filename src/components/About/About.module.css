@@ -1,0 +1,182 @@
+.about {
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(124, 77, 255, 0.1) 100%);
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.content {
+  margin-bottom: 4rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.focusSection {
+  margin: 4rem 0;
+}
+
+.focusHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.focusHeader h3 {
+  font-size: 2rem;
+}
+
+.focusGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.focusItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.focusItem:hover {
+  border-color: var(--primary);
+  transform: translateX(10px);
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+}
+
+.focusDot {
+  min-width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 50%;
+  margin-top: 8px;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.focusItem p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.relevanceCard {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(124, 77, 255, 0.05) 100%);
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.relevanceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.relevanceIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  color: var(--bg-darker);
+}
+
+.relevanceCard h3 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.relevanceCard p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 1rem;
+  }
+
+  .focusHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .focusItem {
+    padding: 1rem;
+  }
+
+  .focusItem:hover {
+    transform: translateX(5px);
+  }
+
+  .relevanceCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
