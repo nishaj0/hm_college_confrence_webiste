@@ -1,0 +1,245 @@
+.domains {
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+}
+
+.domainsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.domainCard {
+  background: var(--bg-card);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.domainCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--domain-color);
+  box-shadow: 0 0 20px var(--domain-color);
+}
+
+.domainCard:hover {
+  border-color: var(--domain-color);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cardHeader {
+  margin-bottom: 1.5rem;
+}
+
+.iconBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(124, 77, 255, 0.1) 100%);
+  border: 2px solid var(--domain-color);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  color: var(--domain-color);
+}
+
+.cardHeader h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.topicsList {
+  list-style: none;
+  padding: 0;
+}
+
+.topicsList li {
+  padding: 0.75rem 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.topicsList li:last-child {
+  border-bottom: none;
+}
+
+.topicsList li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--domain-color);
+  font-weight: bold;
+}
+
+.datesSection, .feesSection {
+  margin: 6rem 0;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  color: var(--primary);
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.datesGrid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dateCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.dateCard:hover {
+  border-color: var(--primary);
+  transform: translateX(10px);
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+}
+
+.eventName {
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.eventDate {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.feesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(124, 77, 255, 0.05) 100%);
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.feeCard:hover {
+  border-color: var(--primary);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.3);
+}
+
+.category {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.fee {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .domains {
+    padding: 4rem 1rem;
+  }
+
+  .domainsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .domainCard {
+    padding: 1.5rem;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+  }
+
+  .dateCard {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+  }
+
+  .dateCard:hover {
+    transform: translateY(-5px);
+  }
+
+  .feesGrid {
+    grid-template-columns: 1fr;
+  }
+}
