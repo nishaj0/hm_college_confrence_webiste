@@ -91,7 +91,7 @@ export default function Domains() {
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              style={{ '--domain-color': domain.color } as any}
+              style={{ '--domain-color': domain.color } as React.CSSProperties}
             >
               <div className={styles.cardHeader}>
                 <div className={styles.iconBox}>

@@ -2,9 +2,10 @@ import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import * as random from 'maath/random';
+import { Points as ThreePoints } from 'three';
 
 function ParticleField() {
-  const ref = useRef<any>(null);
+  const ref = useRef<ThreePoints>(null);
   const sphere = random.inSphere(new Float32Array(5000), { radius: 1.5 }) as Float32Array;
 
   useFrame((_state, delta) => {
