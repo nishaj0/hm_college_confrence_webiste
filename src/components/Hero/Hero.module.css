@@ -110,6 +110,10 @@
   flex-shrink: 0;
 }
 
+.organizersContent {
+  /* Base styles for organizers content wrapper */
+}
+
 .cta {
   display: flex;
   flex-wrap: wrap;
