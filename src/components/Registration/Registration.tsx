@@ -66,6 +66,8 @@ export default function Registration() {
             
             {/* Embedded Google Form - Replace with actual form URL */}
             <div className={styles.formEmbed}>
+              {/* TODO: Replace the src URL below with your actual Google Form embed URL */}
+              {/* To get the embed URL: Open your Google Form > Send > Embed HTML > Copy the src URL */}
               <iframe 
                 src="https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE_FORM_ID/viewform?embedded=true"
                 width="100%"
