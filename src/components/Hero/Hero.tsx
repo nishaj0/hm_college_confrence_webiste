@@ -63,12 +63,14 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
           >
-            <p>Organized by</p>
-            <h3>HM College of Science & Technology</h3>
-            <p className={styles.affiliation}>Affiliated to University of Calicut</p>
-            <p className={styles.association}>
-              In association with IQAC, Research & Publishing Committee, Staff Council, and Staff Club
-            </p>
+            <div className={styles.organizersContent}>
+              <p>Organized by</p>
+              <h3>HM College of Science & Technology</h3>
+              <p className={styles.affiliation}>Affiliated to University of Calicut</p>
+              <p className={styles.association}>
+                In association with IQAC, Research & Publishing Committee, Staff Council, and Staff Club
+              </p>
+            </div>
             <img src="/logo/logo.jpeg" alt="Organizers" className={styles.logo} />
           </motion.div>
 
