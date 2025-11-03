@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { FileText, Mail, Send, Award } from 'lucide-react';
+import { FileText, Mail, Send } from 'lucide-react';
 import styles from './Registration.module.css';
 
 export default function Registration() {
