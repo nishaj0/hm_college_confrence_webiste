@@ -73,6 +73,10 @@
   border-radius: 1rem;
   backdrop-filter: blur(10px);
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .organizers p {
@@ -98,11 +102,12 @@
 }
 
 .logo {
-  width: 250px;
-  height: auto;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-top: 1rem;
+  flex-shrink: 0;
 }
 
 .cta {
@@ -155,6 +160,24 @@
   pointer-events: none;
 }
 
+@media (min-width: 769px) {
+  .organizers {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .organizersContent {
+    flex: 1;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 1rem;
@@ -178,6 +201,11 @@
 
   .organizers h3 {
     font-size: 1.25rem;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
   }
 
   .primaryBtn, .secondaryBtn {
