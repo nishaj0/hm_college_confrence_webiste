@@ -98,7 +98,7 @@ export default function Registration() {
           </motion.div>
         </div>
 
-        <motion.div
+        {/* <motion.div
           className={styles.publicationCard}
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -126,7 +126,7 @@ export default function Registration() {
               <p>Certificate of participation and presentation</p>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className={styles.committeeSection}
