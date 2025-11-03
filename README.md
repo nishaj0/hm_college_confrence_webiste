@@ -101,16 +101,6 @@ All content is modular and can be easily updated:
 - **Registration**: `src/components/Registration/Registration.tsx`
 - **Footer**: `src/components/Footer/Footer.tsx`
 
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
