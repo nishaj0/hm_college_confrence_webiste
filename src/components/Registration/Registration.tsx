@@ -82,18 +82,7 @@ export default function Registration() {
             </div>
 
             <div className={styles.alternateContact}>
-              <div className={styles.orDivider}>
-                <span>OR</span>
-              </div>
-              <div className={styles.emailContact}>
-                <Mail size={24} />
-                <div>
-                  <p>Email your submission to:</p>
-                  <a href="mailto:conference@hmcollegemanjeri.com">
-                    conference@hmcollegemanjeri.com
-                  </a>
-                </div>
-              </div>
+              {/* Email submission section removed */}
             </div>
           </motion.div>
         </div>

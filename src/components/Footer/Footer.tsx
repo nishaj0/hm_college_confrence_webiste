@@ -22,18 +22,18 @@ export default function Footer() {
             <h3 className={styles.sectionTitle}>Contact</h3>
             <div className={styles.info}>
               <Phone size={20} />
-              <a href="tel:+919995483901">+91 99954 83901</a>
+              <a href="tel:04832767077">04832767077</a>
             </div>
             <div className={styles.info}>
               <Mail size={20} />
-              <a href="mailto:conference@hmcollegemanjeri.com">
-                conference@hmcollegemanjeri.com
+              <a href="mailto:hmcmanjeri@gmail.com">
+                hmcmanjeri@gmail.com
               </a>
             </div>
             <div className={styles.info}>
               <Globe size={20} />
-              <a href="https://www.hmcollegemanjeri.com" target="_blank" rel="noopener noreferrer">
-                www.hmcollegemanjeri.com
+              <a href="https://www.hmcollegemanjeri.ac.in" target="_blank" rel="noopener noreferrer">
+                www.hmcollegemanjeri.ac.in
               </a>
             </div>
           </div>
@@ -45,8 +45,8 @@ export default function Footer() {
               <p>January 2026</p>
             </div>
             <p className={styles.description}>
-              Two-Day International Multidisciplinary Conference on Automated Humanity 
-              and Sustainable Livelihoods
+              Two-Day International Multidisciplinary Conference on Automated Humanity
+              and Future Directions
             </p>
           </div>
 

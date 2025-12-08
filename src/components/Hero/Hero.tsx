@@ -18,8 +18,13 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
           >
-            <Globe size={16} />
-            <span>International Conference</span>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+              <span style={{ fontSize: '1.2em', fontWeight: 'bold' }}>HIMICON</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Globe size={16} />
+                <span>International Conference</span>
+              </div>
+            </div>
           </motion.div>
 
           <motion.h1
@@ -49,7 +54,7 @@ export default function Hero() {
           >
             <div className={styles.infoItem}>
               <Calendar size={20} />
-              <span>21, 22 January 2026</span>
+              <span>21–22 January 2026 (Hybrid Mode)</span>
             </div>
             <div className={styles.infoItem}>
               <MapPin size={20} />
@@ -65,11 +70,8 @@ export default function Hero() {
           >
             <div className={styles.organizersContent}>
               <p>Organized by</p>
-              <h3>HM College of Science & Technology</h3>
-              <p className={styles.affiliation}>Affiliated to University of Calicut</p>
-              <p className={styles.association}>
-                In association with IQAC, Research & Publishing Committee, Staff Council, and Staff Club
-              </p>
+              <h3>HM College of Science & Technology, Manjeri & MAKA College of Social Science</h3>
+              <p className={styles.affiliation}>In collaboration with WVSU Philippines & Jamia Nadwiyya Edavanna</p>
             </div>
             <img src="/logo/logo.jpg" alt="Organizers" className={styles.logo} />
           </motion.div>
