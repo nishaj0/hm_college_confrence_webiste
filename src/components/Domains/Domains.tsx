@@ -9,44 +9,29 @@ const domains = [
     icon: Cpu,
     title: "Science & Technology",
     color: "#00ffff",
-    topics: [
-      "Artificial Intelligence, Robotics, and the Future of Work",
-      "Automation in Healthcare, Environment, and Sustainability",
-      "Cybersecurity, Data Governance, and Digital Trust",
-      "Smart Cities, IoT, and Human–Centric Urban Innovation"
-    ]
+    description: "Explores how advancements in AI, robotics, automation, and digital systems are transforming modern life. Integrating concepts from computer science, physics, biology, chemistry, environmental science, geology, geography and mathematical science."
   },
   {
     icon: Briefcase,
-    title: "Commerce & Management",
+    title: "Commerce / Management",
     color: "#7c4dff",
-    topics: [
-      "Automation in Business Processes and Organizational Transformation",
-      "Digital Economy, E-Commerce, and Global Market Dynamics",
-      "Leadership, Ethics, and Corporate Governance in an Automated Era",
-      "Sustainable Business Practices and Green Automation"
-    ]
+    description: "Examines how automation transforming business. It covers finance, accounting, marketing, HR, operations, supply chain, entrepreneurship, and corporate governance. It highlights leadership, ethics, workforce reskilling, and organizational adaptability in a rapidly evolving economy."
   },
   {
     icon: Users,
-    title: "Social Sciences & Humanities",
+    title: "Social Sciences / Humanities / Literature",
     color: "#ff1744",
-    topics: [
-      "Society in Transition: Human Identity, Culture, and Digital Citizenship",
-      "Education, Learning, and Human Development in the Age of Automation",
-      "Policy, Law, and Human Rights in an Automated World",
-      "Literature, Media, and the Narrative of Technological Futures"
-    ]
+    description: "Discusses how automation influence human behaviour, society, culture, and communication. It integrates insights from psychology, sociology, political science, social work, economics, education and humanities to understand changing social dynamics, creativity, identity, and cultural expression."
   }
 ];
 
 const importantDates = [
-  { event: "Abstract Submission Deadline", date: "15 December 2025" },
-  { event: "Notification of Acceptance", date: "16 December 2025" },
-  { event: "Deadline for Fee Payment", date: "20 December 2025" },
-  { event: "Full Paper Submission", date: "31 December 2025" },
-  { event: "Confirmation of Acceptance", date: "02 January 2026" },
-  { event: "Conference Date", date: "21, 22 January 2026" }
+  { event: "Abstract Submission Deadline", date: "20 DEC 2025" },
+  { event: "Notification of Acceptance", date: "22 DEC 2025" },
+  { event: "Deadline for Fee Payment", date: "26 DEC 2025" },
+  { event: "Full Paper Submission", date: "03 JAN 2026" },
+  { event: "Confirmation of Acceptance", date: "05 JAN 2026" },
+  { event: "Conference Date", date: "21, 22 JAN 2026" }
 ];
 
 const registrationFees = [
@@ -112,11 +97,9 @@ export default function Domains() {
                 </div>
                 <h3>{domain.title}</h3>
               </div>
-              <ul className={styles.topicsList}>
-                {domain.topics.map((topic, i) => (
-                  <li key={i}>{topic}</li>
-                ))}
-              </ul>
+              <p className={styles.domainDescription} style={{ color: '#e0e0e0', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                {domain.description}
+              </p>
             </motion.div>
           ))}
         </div>

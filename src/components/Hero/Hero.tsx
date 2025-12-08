@@ -54,7 +54,7 @@ export default function Hero() {
           >
             <div className={styles.infoItem}>
               <Calendar size={20} />
-              <span>21–22 January 2026 (Hybrid Mode)</span>
+              <span>21–22 Jan 2026 (Hybrid Mode)</span>
             </div>
             <div className={styles.infoItem}>
               <MapPin size={20} />

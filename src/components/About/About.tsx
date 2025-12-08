@@ -46,7 +46,7 @@ export default function About() {
           </p>
 
           <div style={{ marginTop: '2rem' }}>
-            <a href="/call-for-papers.jpg" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary)', color: 'white', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold' }}>
+            <a href="/call-for-papers.jpeg" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary)', color: 'white', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold' }}>
               <Sparkles size={18} />
               View Conference Brochure
             </a>
