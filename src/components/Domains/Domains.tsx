@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Cpu, Briefcase, Users, BookOpen, Calendar, DollarSign } from 'lucide-react';
+import { Cpu, Briefcase, Users, Calendar, DollarSign } from 'lucide-react';
 import styles from './Domains.module.css';
 
 const domains = [
@@ -10,10 +10,10 @@ const domains = [
     title: "Science & Technology",
     color: "#00ffff",
     topics: [
-      "AI, Machine Learning, and automation for sustainable technologies",
-      "Spatial data analysis and climate modeling",
-      "Human adaptation and resilience post-disaster",
-      "Green chemistry and renewable materials"
+      "Artificial Intelligence, Robotics, and the Future of Work",
+      "Automation in Healthcare, Environment, and Sustainability",
+      "Cybersecurity, Data Governance, and Digital Trust",
+      "Smart Cities, IoT, and Human–Centric Urban Innovation"
     ]
   },
   {
@@ -21,46 +21,59 @@ const domains = [
     title: "Commerce & Management",
     color: "#7c4dff",
     topics: [
-      "Digital entrepreneurship and sustainable business practices",
-      "Risk assessment and disaster preparedness",
-      "Organizational innovation in an automated economy"
+      "Automation in Business Processes and Organizational Transformation",
+      "Digital Economy, E-Commerce, and Global Market Dynamics",
+      "Leadership, Ethics, and Corporate Governance in an Automated Era",
+      "Sustainable Business Practices and Green Automation"
     ]
   },
   {
     icon: Users,
-    title: "Humanities & Social Science",
+    title: "Social Sciences & Humanities",
     color: "#ff1744",
     topics: [
-      "Governance, policy, and international cooperation for resilience",
-      "Social inclusion and community engagement",
-      "Ethical, social, and cultural aspects of technology"
-    ]
-  },
-  {
-    icon: BookOpen,
-    title: "Languages & Literature",
-    color: "#ffd600",
-    topics: [
-      "Literary reflections on automation and human identity",
-      "Communication for sustainability and disaster awareness",
-      "Indigenous knowledge and environmental narratives"
+      "Society in Transition: Human Identity, Culture, and Digital Citizenship",
+      "Education, Learning, and Human Development in the Age of Automation",
+      "Policy, Law, and Human Rights in an Automated World",
+      "Literature, Media, and the Narrative of Technological Futures"
     ]
   }
 ];
 
 const importantDates = [
-  { event: "Abstract Submission", date: "[Insert Date]" },
-  { event: "Paper Submission", date: "[Insert Date]" },
-  { event: "Notification of Acceptance", date: "[Insert Date]" },
-  { event: "Registration Deadline", date: "[Insert Date]" },
-  { event: "Conference Date", date: "January 2026" }
+  { event: "Abstract Submission Deadline", date: "15 December 2025" },
+  { event: "Notification of Acceptance", date: "16 December 2025" },
+  { event: "Deadline for Fee Payment", date: "20 December 2025" },
+  { event: "Full Paper Submission", date: "31 December 2025" },
+  { event: "Confirmation of Acceptance", date: "02 January 2026" },
+  { event: "Conference Date", date: "21, 22 January 2026" }
 ];
 
 const registrationFees = [
-  { category: "Faculty / Academicians", fee: "₹500" },
-  { category: "Research Scholars", fee: "₹300" },
-  { category: "Students", fee: "₹200" },
-  { category: "International Participants", fee: "$25" }
+  {
+    category: "Academicians & Faculty",
+    single: "₹1500",
+    joint: "₹1000",
+    online: "₹800"
+  },
+  {
+    category: "Research Scholars",
+    single: "₹800",
+    joint: "₹600",
+    online: "₹500"
+  },
+  {
+    category: "Students",
+    single: "₹500",
+    joint: "₹300",
+    online: "₹250"
+  },
+  {
+    category: "Foreign Nationals",
+    single: "$50",
+    joint: "$30",
+    online: "$30"
+  }
 ];
 
 export default function Domains() {
@@ -134,7 +147,6 @@ export default function Domains() {
             ))}
           </div>
         </motion.div>
-
         {/* Registration Fees */}
         <motion.div
           className={styles.feesSection}
@@ -156,7 +168,20 @@ export default function Domains() {
                 transition={{ duration: 0.4, delay: 0.9 + index * 0.1 }}
               >
                 <span className={styles.category}>{item.category}</span>
-                <span className={styles.fee}>{item.fee}</span>
+                <div className={styles.feeDetails}>
+                  <div className={styles.feeRow}>
+                    <span className={styles.feeLabel}>Single Author</span>
+                    <span className={styles.feeValue}>{item.single}</span>
+                  </div>
+                  <div className={styles.feeRow}>
+                    <span className={styles.feeLabel}>Joint Authors (Each)</span>
+                    <span className={styles.feeValue}>{item.joint}</span>
+                  </div>
+                  <div className={styles.feeRow}>
+                    <span className={styles.feeLabel}>Online</span>
+                    <span className={styles.feeValue}>{item.online}</span>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>

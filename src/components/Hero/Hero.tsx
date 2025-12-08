@@ -28,8 +28,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Automated Humanity &amp; 
-            <span className="gradient-text"> Sustainable Livelihoods</span>
+            Automated Humanity &amp;
+            <span className="gradient-text"> Future Directions</span>
           </motion.h1>
 
           <motion.p
@@ -38,7 +38,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Innovations for a Disaster-Resilient World
+            Automation and Humanity in Transition: Policies, Practices, Prospects and Future Directions Towards a Better World Order
           </motion.p>
 
           <motion.div
@@ -49,7 +49,7 @@ export default function Hero() {
           >
             <div className={styles.infoItem}>
               <Calendar size={20} />
-              <span>January 2026</span>
+              <span>21, 22 January 2026</span>
             </div>
             <div className={styles.infoItem}>
               <MapPin size={20} />
@@ -71,7 +71,7 @@ export default function Hero() {
                 In association with IQAC, Research & Publishing Committee, Staff Council, and Staff Club
               </p>
             </div>
-            <img src="/logo/logo.jpeg" alt="Organizers" className={styles.logo} />
+            <img src="/logo/logo.jpg" alt="Organizers" className={styles.logo} />
           </motion.div>
 
           <motion.div
@@ -89,7 +89,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
       </div>
-      
+
       <div className={styles.gradientOverlay}></div>
     </section>
   );

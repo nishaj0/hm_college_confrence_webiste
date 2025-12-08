@@ -39,7 +39,7 @@ export default function Registration() {
             <h3>Submit Your Paper</h3>
             <p>
               All accepted papers will be published in the Conference Proceedings with ISBN.
-              Papers should address the conference themes and contribute to the discourse on 
+              Papers should address the conference themes and contribute to the discourse on
               automated humanity and sustainable livelihoods.
             </p>
             <div className={styles.guidelines}>
@@ -63,13 +63,13 @@ export default function Registration() {
               <h3>Registration & Submission</h3>
               <p>Complete the form below to register and submit your paper</p>
             </div>
-            
+
             {/* Embedded Google Form - Replace with actual form URL */}
             <div className={styles.formEmbed}>
               {/* TODO: Replace the src URL below with your actual Google Form embed URL */}
               {/* To get the embed URL: Open your Google Form > Send > Embed HTML > Copy the src URL */}
-              <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE_FORM_ID/viewform?embedded=true"
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSczvCE7tNiefjhliNLZjkfnMEMISyk_3-tClR9LHxL2ta-VPg/viewform?embedded=true"
                 width="100%"
                 height="800"
                 frameBorder="0"
@@ -129,6 +129,18 @@ export default function Registration() {
         </motion.div> */}
 
         <motion.div
+          className={styles.publicationCard}
+          style={{ marginTop: '2rem' }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        >
+          <h3>Contact Us</h3>
+          <p><strong>Email:</strong> <a href="mailto:hmcollegeconf2026@gmail.com">hmcollegeconf2026@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+918075611845">8075611845</a>, <a href="tel:+918593917842">8593917842</a></p>
+        </motion.div>
+
+        <motion.div
           className={styles.committeeSection}
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
@@ -141,7 +153,7 @@ export default function Registration() {
             <div className={styles.committee}>Staff Council and Staff Club, HMC</div>
           </div>
           <p className={styles.committeeNote}>
-            Their interdisciplinary insights have shaped a theme that connects technology, 
+            Their interdisciplinary insights have shaped a theme that connects technology,
             sustainability, and resilience, inspiring meaningful dialogue and innovation.
           </p>
         </motion.div>

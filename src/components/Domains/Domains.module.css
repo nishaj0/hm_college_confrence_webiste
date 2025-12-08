@@ -181,10 +181,10 @@
 .feeCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch; /* vital for full width rows */
   padding: 2rem;
   background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(124, 77, 255, 0.05) 100%);
-  border: 2px solid rgba(0, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -193,21 +193,49 @@
 .feeCard:hover {
   border-color: var(--primary);
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.15);
 }
 
 .category {
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
 }
 
-.fee {
-  font-size: 2rem;
+.feeDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feeRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.feeRow:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.feeLabel {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.feeValue {
+  color: var(--text-primary);
   font-weight: 700;
-  color: var(--primary);
   font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {

@@ -40,19 +40,17 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <p className={styles.description}>
-            In an era where automation reshapes human existence, achieving balance between 
-            technological progress and sustainable living is one of the defining challenges of our times.
+            It emphasizes that automation is not merely a technical phenomenon but a socio-cultural process
+            that requires careful planning, regulation, and public engagement to ensure innovation contributes
+            to the collective well-being of humanity.
           </p>
-          <p className={styles.description}>
-            The <strong>International Conference on Automated Humanity and Sustainable Livelihoods</strong> seeks 
-            to explore the synergy between human intelligence and artificial innovation in addressing 
-            global issues such as climate change, ecological imbalance, and socio-economic vulnerability.
-          </p>
-          <p className={styles.description}>
-            This platform brings together scientists, technologists, environmentalists, and social 
-            thinkers to deliberate on how emerging technologies can empower humanity to create 
-            sustainable livelihoods and foster resilience against natural and man-made disasters.
-          </p>
+
+          <div style={{ marginTop: '2rem' }}>
+            <a href="/call-for-papers.jpg" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary)', color: 'white', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold' }}>
+              <Sparkles size={18} />
+              View Conference Brochure
+            </a>
+          </div>
         </motion.div>
 
         <motion.div
@@ -92,16 +90,16 @@ export default function About() {
           </div>
           <h3>Relevance of the Theme</h3>
           <p>
-            The theme emphasizes that true progress lies not only in technological advancement 
-            but in the ability of humanity to live harmoniously with nature, ensuring safety, 
+            The theme emphasizes that true progress lies not only in technological advancement
+            but in the ability of humanity to live harmoniously with nature, ensuring safety,
             equity, and sustainability for generations to come.
           </p>
           <p>
-            By integrating ethical innovation with compassion and inclusivity, societies can 
+            By integrating ethical innovation with compassion and inclusivity, societies can
             move toward a future where technology empowers humanity and strengthens resilience.
           </p>
         </motion.div>
       </div>
-    </section>
+    </section >
   );
 }
