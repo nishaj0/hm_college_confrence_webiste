@@ -5,20 +5,30 @@
 }
 
 :root {
-  /* Futuristic Color Palette */
-  --primary: #00ffff;
-  --primary-dark: #00b8d4;
-  --secondary: #7c4dff;
-  --accent: #ff1744;
-  --bg-dark: #0a0e27;
-  --bg-darker: #050813;
-  --bg-card: rgba(15, 23, 42, 0.7);
-  --text-primary: #ffffff;
-  --text-secondary: #94a3b8;
-  --glow-cyan: rgba(0, 255, 255, 0.5);
-  --glow-purple: rgba(124, 77, 255, 0.5);
-  
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Humanity Color Palette */
+  --primary: #e76f51;
+  /* Terra Cotta */
+  --primary-dark: #cd5d40;
+  --secondary: #2a9d8f;
+  /* Teal */
+  --accent: #e9c46a;
+  /* Mustard */
+
+  --bg-dark: #fdfbf7;
+  /* Warm Cream */
+  --bg-darker: #f4f1ea;
+  /* Slightly Darker Cream for contrast */
+  --bg-card: rgba(255, 255, 255, 0.8);
+
+  --text-primary: #1e293b;
+  /* Slate 800 */
+  --text-secondary: #475569;
+  /* Slate 600 */
+
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Outfit', 'Inter', system-ui, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,7 +38,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg-darker);
+  background: var(--bg-dark);
   color: var(--text-primary);
   overflow-x: hidden;
   min-height: 100vh;
@@ -39,10 +49,16 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Asap', sans-serif;
   font-weight: 700;
   line-height: 1.2;
+  color: var(--text-primary);
 }
 
 a {
@@ -71,18 +87,19 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+  background: rgba(231, 111, 81, 0.5);
+  /* Primary with opacity */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--primary-dark) 0%, var(--secondary) 100%);
+  background: var(--primary);
 }
 
 /* Selection */
 ::selection {
-  background: var(--glow-cyan);
-  color: var(--bg-darker);
+  background: var(--secondary);
+  color: white;
 }
 
 /* Utility Classes */
@@ -93,19 +110,25 @@ button {
   background-clip: text;
 }
 
-.glow-effect {
-  box-shadow: 0 0 20px var(--glow-cyan), 0 0 40px var(--glow-cyan);
+/* Subtler shadows for light theme instead of glow */
+.card-shadow {
+  box-shadow: var(--shadow-soft);
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
 
-@keyframes pulse-glow {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes slide-up {
@@ -113,6 +136,7 @@ button {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

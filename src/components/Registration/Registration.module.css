@@ -19,8 +19,8 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(124, 77, 255, 0.1) 100%);
-  border: 2px solid rgba(0, 255, 255, 0.3);
+  background: rgba(231, 111, 81, 0.1);
+  border: 2px solid rgba(231, 111, 81, 0.3);
   border-radius: 50%;
   margin-bottom: 1.5rem;
   color: var(--primary);
@@ -49,9 +49,11 @@
   margin-bottom: 4rem;
 }
 
-.infoCard, .formCard {
+.infoCard,
+.formCard {
   background: var(--bg-card);
-  border: 2px solid rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-soft);
   border-radius: 20px;
   padding: 2.5rem;
   backdrop-filter: blur(10px);
@@ -65,13 +67,14 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   border-radius: 15px;
   margin-bottom: 1.5rem;
-  color: var(--bg-darker);
+  color: white;
 }
 
-.infoCard h3, .formCard h3 {
+.infoCard h3,
+.formCard h3 {
   font-size: 1.75rem;
   color: var(--primary);
   margin-bottom: 1rem;
@@ -151,7 +154,7 @@
   top: 50%;
   width: 40%;
   height: 1px;
-  background: rgba(0, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .orDivider::before {
@@ -174,10 +177,11 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: rgba(0, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  background: rgba(42, 157, 143, 0.05);
+  /* Soft Teal */
+  border: 1px solid rgba(42, 157, 143, 0.2);
   border-radius: 12px;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .emailContact p {
@@ -186,21 +190,23 @@
   font-size: 0.9rem;
 }
 
-.emailContact > div {
+.emailContact>div {
   min-width: 0;
 }
 
 .emailContact a {
-  color: var(--primary);
+  color: var(--secondary);
   font-weight: 600;
   font-size: 1.1rem;
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+
 .publicationCard {
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(124, 77, 255, 0.05) 100%);
-  border: 2px solid rgba(0, 255, 255, 0.3);
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-soft);
   border-radius: 20px;
   padding: 3rem;
   backdrop-filter: blur(10px);
@@ -213,10 +219,10 @@
   justify-content: center;
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  color: var(--bg-darker);
+  color: white;
 }
 
 .publicationCard h3 {
@@ -244,7 +250,7 @@
   width: 28px;
   height: 28px;
   background: var(--primary);
-  color: var(--bg-darker);
+  color: white;
   border-radius: 50%;
   font-weight: bold;
   flex-shrink: 0;
@@ -261,7 +267,8 @@
   text-align: center;
   padding: 3rem;
   background: var(--bg-card);
-  border: 2px solid rgba(124, 77, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-soft);
   border-radius: 20px;
   backdrop-filter: blur(10px);
 }
@@ -282,10 +289,11 @@
 
 .committee {
   padding: 0.75rem 1.5rem;
-  background: rgba(124, 77, 255, 0.1);
-  border: 1px solid rgba(124, 77, 255, 0.3);
+  background: rgba(233, 196, 106, 0.1);
+  border: 1px solid rgba(233, 196, 106, 0.3);
   border-radius: 50px;
-  color: var(--secondary);
+  color: #b58d00;
+  /* Darker mustard for text readability */
   font-weight: 500;
 }
 
@@ -312,7 +320,8 @@
     padding: 4rem 1rem;
   }
 
-  .infoCard, .formCard {
+  .infoCard,
+  .formCard {
     padding: 1.25rem;
     min-width: 0;
   }
@@ -335,7 +344,8 @@
     padding: 3rem 0.75rem;
   }
 
-  .infoCard, .formCard {
+  .infoCard,
+  .formCard {
     padding: 1rem;
     min-width: 0;
   }

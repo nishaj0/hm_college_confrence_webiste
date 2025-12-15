@@ -19,8 +19,8 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(124, 77, 255, 0.1) 100%);
-  border: 2px solid rgba(0, 255, 255, 0.3);
+  background: rgba(231, 111, 81, 0.1);
+  border: 2px solid rgba(231, 111, 81, 0.3);
   border-radius: 50%;
   margin-bottom: 1.5rem;
   color: var(--primary);
@@ -81,7 +81,7 @@
   gap: 1rem;
   padding: 1.5rem;
   background: var(--bg-card);
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -90,7 +90,7 @@
 .focusItem:hover {
   border-color: var(--primary);
   transform: translateX(10px);
-  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .focusDot {
@@ -99,7 +99,7 @@
   background: var(--primary);
   border-radius: 50%;
   margin-top: 8px;
-  box-shadow: 0 0 10px var(--primary);
+  box-shadow: 0 0 5px var(--primary);
 }
 
 .focusItem p {
@@ -109,8 +109,9 @@
 }
 
 .relevanceCard {
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(124, 77, 255, 0.05) 100%);
-  border: 2px solid rgba(0, 255, 255, 0.3);
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-soft);
   border-radius: 20px;
   padding: 3rem;
   text-align: center;
@@ -135,10 +136,10 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  color: var(--bg-darker);
+  color: white;
 }
 
 .relevanceCard h3 {

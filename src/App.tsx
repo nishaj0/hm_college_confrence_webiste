@@ -1,4 +1,4 @@
-import ParticleBackground from './components/Background/ParticleBackground';
+import Background from './components/Background/Background';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Domains from './components/Domains/Domains';
@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
-      <ParticleBackground />
+      <Background />
       <Hero />
       <About />
       <Domains />

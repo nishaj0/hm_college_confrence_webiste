@@ -8,19 +8,19 @@ const domains = [
   {
     icon: Cpu,
     title: "Science & Technology",
-    color: "#00ffff",
+    color: "#2a9d8f", // Teal
     description: "Explores how advancements in AI, robotics, automation, and digital systems are transforming modern life. Integrating concepts from computer science, physics, biology, chemistry, environmental science, geology, geography and mathematical science."
   },
   {
     icon: Briefcase,
     title: "Commerce / Management",
-    color: "#7c4dff",
+    color: "#e9c46a", // Mustard
     description: "Examines how automation transforming business. It covers finance, accounting, marketing, HR, operations, supply chain, entrepreneurship, and corporate governance. It highlights leadership, ethics, workforce reskilling, and organizational adaptability in a rapidly evolving economy."
   },
   {
     icon: Users,
     title: "Social Sciences / Humanities / Literature",
-    color: "#ff1744",
+    color: "#e76f51", // Terra Cotta
     description: "Discusses how automation influence human behaviour, society, culture, and communication. It integrates insights from psychology, sociology, political science, social work, economics, education and humanities to understand changing social dynamics, creativity, identity, and cultural expression."
   }
 ];
@@ -97,7 +97,7 @@ export default function Domains() {
                 </div>
                 <h3>{domain.title}</h3>
               </div>
-              <p className={styles.domainDescription} style={{ color: '#e0e0e0', lineHeight: '1.6', fontSize: '0.95rem' }}>
+              <p className={styles.domainDescription} style={{ color: 'var(--text-secondary)', lineHeight: '1.6', fontSize: '0.95rem' }}>
                 {domain.description}
               </p>
             </motion.div>
