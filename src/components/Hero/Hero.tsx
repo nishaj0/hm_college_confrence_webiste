@@ -33,8 +33,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Automated Humanity &amp;
-            <span className="gradient-text"> Future Directions</span>
+            Automation and Humanity in Transition:
           </motion.h1>
 
           <motion.p

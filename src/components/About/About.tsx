@@ -40,9 +40,14 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <p className={styles.description}>
-            It emphasizes that automation is not merely a technical phenomenon but a socio-cultural process
-            that requires careful planning, regulation, and public engagement to ensure innovation contributes
-            to the collective well-being of humanity.
+            In an era of rapid technological change, understanding the relationship
+            between automation and humanity has become essential. This international conference brings together scholars, policymakers, and professionals
+            to explore how automation influences science, society, economy, culture and governance. The discussions examine how technologies
+            such as Al, robotics, and digital systems reshape work, communication, environmental management, creativity, and human well-being.
+            By integrating insights from the sciences, social sciences, commerce,
+            and the humanities, the conference promotes ethical, sustainable, and
+            inclusive approaches to technological development. It provides a platform for collaborative ideas that support a more resilient, culturally
+            aware and humane future.
           </p>
 
           <div style={{ marginTop: '2rem' }}>
