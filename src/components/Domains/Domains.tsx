@@ -26,11 +26,11 @@ const domains = [
 ];
 
 const importantDates = [
-  { event: "Abstract Submission Deadline", date: "20 DEC 2025" },
-  { event: "Notification of Acceptance", date: "22 DEC 2025" },
-  { event: "Deadline for Fee Payment", date: "26 DEC 2025" },
-  { event: "Full Paper Submission", date: "03 JAN 2026" },
-  { event: "Confirmation of Acceptance", date: "05 JAN 2026" },
+  { event: "Abstract Submission Deadline", date: "30 DEC 2025" },
+  { event: "Notification of Acceptance", date: "31 DEC 2025" },
+  { event: "Deadline for Fee Payment", date: "01 JAN 2026" },
+  { event: "Full Paper Submission", date: "10 JAN 2026" },
+  { event: "Confirmation of Acceptance", date: "12 JAN 2026" },
   { event: "Conference Date", date: "21, 22 JAN 2026" }
 ];
 

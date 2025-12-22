@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  overflow: hidden;
+  padding: 10px 0;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.scrollingText {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-left: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrollingText:hover {
+  animation-play-state: paused;
+}
