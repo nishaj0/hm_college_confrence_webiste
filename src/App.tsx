@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Domains from './components/Domains/Domains';
 import Registration from './components/Registration/Registration';
+import PreConfPosters from './components/PreConfPosters/PreConfPosters';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Domains />
       <Registration />
+      <PreConfPosters />
       <Footer />
     </>
   );
