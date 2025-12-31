@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Sparkles, Target, Lightbulb } from 'lucide-react';
+import { Sparkles, Target, Lightbulb, FolderOpen } from 'lucide-react';
 import styles from './About.module.css';
 
 export default function About() {
@@ -50,10 +50,14 @@ export default function About() {
             aware and humane future.
           </p>
 
-          <div style={{ marginTop: '2rem' }}>
+          <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a href="/call-for-papers.jpeg" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary)', color: 'white', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold' }}>
               <Sparkles size={18} />
               View Conference Brochure
+            </a>
+            <a href="https://drive.google.com/drive/folders/18XZbwL0cIdK_R_MpAc8Hwj7wqYpAiqMS" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary)', color: 'white', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold' }}>
+              <FolderOpen size={18} />
+              Conference Resources
             </a>
           </div>
         </motion.div>
