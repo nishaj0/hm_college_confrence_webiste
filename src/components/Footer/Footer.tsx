@@ -55,7 +55,6 @@ export default function Footer() {
             <nav className={styles.links}>
               <a href="#about">About</a>
               <a href="#domains">Domains</a>
-              <a href="#registration">Registration</a>
               <a href="#about">Important Dates</a>
             </nav>
           </div>
